@@ -1,0 +1,21 @@
+<h1>hello world some</h1>
+
+{% liquid
+   assign a = 10
+  assign b = 10
+
+  if a == b
+  echo 'a == b'
+  echo 'a'
+  endif
+  
+%}
+
+{% for i in (1..5) %}
+ <h1>{{ i }}</h1>
+  {% endfor %}
+
+  {% for i in (1..5) %}
+    <h1>{{ "hello world" }}</h1>
+
+    {% endfor %}
